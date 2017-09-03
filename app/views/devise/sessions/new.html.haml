@@ -13,6 +13,6 @@
         .checkbox
           = f.label :remember_me do
             = f.check_box :remember_me
-            = t('.remember_me', default: 'Remember me')
+            = t('.remember_me', default: '自動ログイン')
       = f.submit  t('.sign_in', default: 'Sign in'), class: 'btn btn-primary'
 = render 'devise/shared/links'
