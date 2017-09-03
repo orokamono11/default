@@ -1,17 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+このソースコードは、
+railsの必須gemを導入した状態
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.4.1
 
-* System dependencies
+* ruby on rails versions: 5.1.3
 
-* Configuration
+* Configuration: 
 
-* Database creation
+* Database creation: sqlite3
 
 * Database initialization
 
