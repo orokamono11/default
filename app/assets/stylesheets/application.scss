@@ -12,11 +12,14 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap-social
+ *= require font-awesome
  */
 
 @import "bootstrap";
 @import "devise_bootstrap_views";
-
+@import "bootstrap-social";
+@import "font-awesome";
 .container {
     padding-top: 70px;
     padding-bottom: 30px;

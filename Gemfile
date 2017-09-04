@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap-social-rails'
+gem 'font-awesome-rails'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'haml'
 gem 'erb2haml'
 gem 'bootstrap', '~> 4.0.0.beta'
