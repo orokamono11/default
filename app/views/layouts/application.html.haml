@@ -21,7 +21,12 @@
       %nav.navbar.navbar-dark.bg-dark
         %button.navbar-toggler{"aria-controls" => "navbarToggleExternalContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarToggleExternalContent", "data-toggle" => "collapse", :type => "button"}
           %span.navbar-toggler-icon
-    
 
   .container
+    - if notice
+      %p.alert.alert-success
+        = notice
+    - if alert
+      %p.alert.alert-danger
+        = alert
     = yield
