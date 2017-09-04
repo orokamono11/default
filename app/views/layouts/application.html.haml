@@ -7,4 +7,15 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+  %header
+    .pos-f-t
+      #navbarToggleExternalContent.collapse
+        .bg-dark.p-4
+          
+      %nav.navbar.navbar-dark.bg-dark
+        %button.navbar-toggler{"aria-controls" => "navbarToggleExternalContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarToggleExternalContent", "data-toggle" => "collapse", :type => "button"}
+          %span.navbar-toggler-icon
+    
+
+  .container
     = yield
