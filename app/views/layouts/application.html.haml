@@ -11,7 +11,13 @@
     .pos-f-t
       #navbarToggleExternalContent.collapse
         .bg-dark.p-4
-          
+          - if user_signed_in?
+            = link_to 'プロフィール編集',edit_user_registration_path,class: "btn btn-warning"
+            = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "btn btn-danger"
+            -# = current_user.user_name
+          - else
+            = link_to 'アカウント登録', new_user_registration_path, class: "btn btn-success"
+            = link_to 'ログイン', new_user_session_path, class: "btn btn-info"
       %nav.navbar.navbar-dark.bg-dark
         %button.navbar-toggler{"aria-controls" => "navbarToggleExternalContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarToggleExternalContent", "data-toggle" => "collapse", :type => "button"}
           %span.navbar-toggler-icon
