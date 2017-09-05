@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'active_skin'
+gem 'rails-i18n'
+gem 'activeadmin'
 gem 'bootstrap-social-rails'
 gem 'font-awesome-rails'
 gem 'omniauth'
